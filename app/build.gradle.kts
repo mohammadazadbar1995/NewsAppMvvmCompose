@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    kotlin("kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -69,4 +71,14 @@ dependencies {
 
     implementation(Dependencies.lifecycleViewmodelKtx)
     implementation(Dependencies.navigationCompose)
+
+    implementation(project(Modules.utilities))
+
+    implementation(Dependencies.hiltAndroid)
+    kapt(Dependencies.hiltAndroid)
+    kapt(Dependencies.hiltAndroidCompiler)
+}
+
+kapt {
+    correctErrorTypes = true
 }

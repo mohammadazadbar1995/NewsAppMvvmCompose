@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "NewsAppMvvmCompose"
 include(":app")
+include(":utilities")
