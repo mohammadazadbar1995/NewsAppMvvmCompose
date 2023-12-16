@@ -17,12 +17,14 @@ object Dependencies {
     val debugManifestCompose by lazy { "androidx.compose.ui:ui-test-manifest" }
     val lifecycleViewmodelKtx by lazy { "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.lifecycleViewmodelKtx}" }
     val navigationCompose by lazy { "androidx.navigation:navigation-compose:${Versions.navigationCompose}" }
-    val appcompat by lazy { " androidx.appcompat:appcompat:${Versions.appcompat}" }
+    val appcompat by lazy { "androidx.appcompat:appcompat:${Versions.appcompat}" }
     val material by lazy { "com.google.android.material:material:${Versions.matrial}" }
 
     val hiltAndroid by lazy { "com.google.dagger:hilt-android:${Versions.hilt}" }
     val hiltAndroidCompiler by lazy { "com.google.dagger:hilt-android-compiler:${Versions.hilt}" }
     val hiltCompiler by lazy { "androidx.hilt:hilt-compiler:${Versions.hiltCompiler}" }
+
+    val hiltNavigationCompose by lazy { "androidx.hilt:hilt-navigation-compose:${Versions.hiltNavigationCompose}" }
 }
 
 object Modules{

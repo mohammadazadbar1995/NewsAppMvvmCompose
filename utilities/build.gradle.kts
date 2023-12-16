@@ -37,7 +37,4 @@ dependencies {
     implementation(Dependencies.coreKtx)
     implementation(Dependencies.appcompat)
     implementation(Dependencies.material)
-    testImplementation(Dependencies.testComposeJunit)
-    androidTestImplementation(Dependencies.testComposeJunitExt)
-    androidTestImplementation(Dependencies.testEspresso)
 }
