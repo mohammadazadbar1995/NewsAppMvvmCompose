@@ -1,4 +1,4 @@
-package ir.newsappmvvmcompose
+package ir.newsappmvvmcompose.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
