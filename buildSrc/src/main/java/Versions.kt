@@ -26,4 +26,8 @@ object Versions {
 
     const val coroutines = "1.8.0-RC"
 
+    const val splashScreen = "1.0.0-alpha02"
+
+    const val coil = "2.2.0"
+
 }

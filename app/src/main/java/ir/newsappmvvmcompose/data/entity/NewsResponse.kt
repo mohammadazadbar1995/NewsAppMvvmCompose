@@ -1,23 +1,23 @@
 package ir.newsappmvvmcompose.data.entity
 
 data class NewsResponse(
-    val status: String,
-    val totalResults: Int,
-    val articles: List<Article>
+    val status: String? = null,
+    val totalResults: Int? = null,
+    val articles: List<Article>? = null
 )
 
 data class Article(
-    val author: String,
-    val title: String,
-    val description: String,
-    val url: String,
-    val urlToImage: String,
-    val publishedAt: String,
-    val content: String,
-    val source: Source,
+    val author: String? = null,
+    val title: String? = null,
+    val description: String? = null,
+    val url: String? = null,
+    val urlToImage: String? = null,
+    val publishedAt: String? = null,
+    val content: String? = null,
+    val source: Source? = null,
 )
 
 data class Source(
-    val id: String,
-    val name: String
+    val id: String? = null,
+    val name: String? = null
 )
