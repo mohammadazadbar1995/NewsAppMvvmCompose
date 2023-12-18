@@ -79,8 +79,19 @@ dependencies {
     kapt(Dependencies.hiltAndroidCompiler)
 
     implementation(Dependencies.hiltNavigationCompose)
+
+    implementation(Dependencies.retrofit)
+    implementation(Dependencies.okhttp)
+    implementation(Dependencies.gsonConverter)
+    implementation(Dependencies.moshi)
+    implementation(Dependencies.moshiConverter)
+    implementation(Dependencies.loggingInterceptor)
+
+    implementation(Dependencies.coroutinesCore)
+    implementation(Dependencies.coroutinesAndroid)
 }
 
 kapt {
     correctErrorTypes = true
 }
+
