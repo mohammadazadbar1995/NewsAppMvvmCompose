@@ -14,8 +14,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.utilities.ResourceState
+import ir.newsappmvvmcompose.ui.component.EmptyStateComponent
 import ir.newsappmvvmcompose.ui.component.Loader
-import ir.newsappmvvmcompose.ui.component.NewsList
 import ir.newsappmvvmcompose.ui.component.NewsRowComponent
 import ir.newsappmvvmcompose.ui.viewmodel.NewsViewModel
 
@@ -39,7 +39,7 @@ fun HomeScreen(
         state = pagerState,
         modifier = Modifier.fillMaxSize(),
         pageSize = PageSize.Fill,
-        pageSpacing = 8.dp
+        pageSpacing = 80.dp
     ) { page: Int ->
         when (newsResponse) {
             is ResourceState.Loading -> {
@@ -53,9 +53,10 @@ fun HomeScreen(
                 response.articles?.let {
                     if (it.isNotEmpty()) {
                         NewsRowComponent(page, response.articles[page])
+                    }else{
+                        EmptyStateComponent()
                     }
                 }
-
             }
 
             is ResourceState.Error -> {
